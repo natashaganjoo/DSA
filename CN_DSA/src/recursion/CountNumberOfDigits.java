@@ -11,7 +11,7 @@ public class CountNumberOfDigits {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(count(3235));
+		System.out.println(count(4567));
 	}
 
 }
