@@ -16,16 +16,8 @@ public class FindFirstIndexOfElement {
 	}
 	
 	public static int checkNumber(int input[], int x, int start) {
-		
+
 		// base case
-//		if(start == input.length - 1) {
-//			if(input[start] == x) {
-//				return start;
-//			}
-//			return -1;
-//		}
-		
-		// better way of writing above base case
 		if(start == input.length) {
 			return -1;
 		}
@@ -40,9 +32,15 @@ public class FindFirstIndexOfElement {
 	}
 	
 	public static void main(String[] args) {
-		int arr[] = {1,2,9,4,5,7};
+		int arr[] = {1,2,7,4,5,7};
 		System.out.println(findNumber(arr, 7));
 
 	}
-
+	
+	// 1,2,9,4,5,7  
+//	2,9,4,5,7
+//	9,4,5,7
+//	4,5,7
+//	5,7
+//	7
 }

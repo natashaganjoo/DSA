@@ -6,7 +6,10 @@ public static int findNumber(int arr[], int x) {
 		
 		return checkNumber(arr, x, 0);
 	}
-	
+
+	// one approach is to start traversing arr from n to 0, and do si-1
+	// but here it is specifically asked that we need to traverse array in increasing order
+
 	public static int checkNumber(int input[], int x, int start) {
 		
 		// base case
