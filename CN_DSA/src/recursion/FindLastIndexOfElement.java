@@ -20,14 +20,17 @@ public static int findNumber(int arr[], int x) {
 		// for finding last index, we will not look at the first index first, firstly do recursion then check!
 		int smallAns = checkNumber(input, x, start + 1);
 		
-		if(smallAns != -1) {
-			return smallAns;
+		if(smallAns == -1) {
+			if(input[start] == x) {
+				return start;
+			}
+			else {
+				return -1;
+			}
 		}
-		if(input[start] == x) {
-			return start;
-		}
+		// if it is already found in idx + 1 to end => then return that ans only everytime 
 		else {
-			return -1;
+			return smallAns;
 		}
 		
 	}
