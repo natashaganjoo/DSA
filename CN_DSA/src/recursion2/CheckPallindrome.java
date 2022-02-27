@@ -21,9 +21,7 @@ public class CheckPallindrome {
 	}
 
 	public static void main(String[] args) {
-		
 		System.out.println(checkPallindrome("madam"));
-
 	}
 
 }
